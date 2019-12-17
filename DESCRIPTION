@@ -1,0 +1,20 @@
+Package: ser_autotweet
+Title: Deploy SER Auto-Tweeting
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Malcolm",
+           family = "Barrett",
+           role = c("aut", "cre"),
+           email = "malcolmbarrett@gmail.com",
+           comment = c(ORCID = "0000-0003-0299-5825"))
+Description: This script deploys SER Auto-tweeting via GitHub Actions.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+Imports: 
+    ser (>= 0.0.1)
+Remotes: 
+    SERTwitter/ser
+URL: https://github.com/SERTwitter/autotweet
+BugReports: https://github.com/SERTwitter/autotweet/issues
