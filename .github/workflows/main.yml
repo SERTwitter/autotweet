@@ -27,5 +27,5 @@ jobs:
           SER_CONSUMER_SECRET: ${{ secrets.SER_CONSUMER_SECRET }}
           TWITTER_APP_NAME: ${{ secrets.TWITTER_APP_NAME }}
         run: |-
-          Rscript -e "library(ser); source_ser('test_auto_tweet'); source_ser('test_email_error'); source_ser('test_email_summary')"
+          Rscript -e "library(ser); source_ser('test_email_error'); source_ser('test_email_summary')"
     container: rocker/verse:latest
