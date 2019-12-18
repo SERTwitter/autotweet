@@ -16,13 +16,11 @@ jobs:
       - name: Tweet From Queue
         env:
           DRIVE_AUTH_TOKEN_PATH: ${{ secrets.DRIVE_AUTH_TOKEN_PATH }}
-          GMAIL_ID: ${{ secrets.GMAIL_ID }}
-          GMAIL_SECRET: ${{ secrets.GMAIL_SECRET }}
+          GMAILR_APP: ${{ secrets.GMAILR_APP }}
           SER_ACCESS_SECRET: ${{ secrets.SER_ACCESS_SECRET }}
           SER_ACCESS_TOKEN: ${{ secrets.SER_ACCESS_TOKEN }}
           SER_CONSUMER_KEY: ${{ secrets.SER_CONSUMER_KEY }}
           SER_CONSUMER_SECRET: ${{ secrets.SER_CONSUMER_SECRET }}
-          GMAILR_APP: ${{ secrets.GMAILR_APP }}
         run: |-
           Rscript -e "library(ser); source_ser('auto_tweet')"
     container: rocker/verse:latest
