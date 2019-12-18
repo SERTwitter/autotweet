@@ -1,8 +1,5 @@
 name: Tweet daily from tweet queue
 'on':
-  push:
-    branches:
-      - master
   schedule:
     - cron:  '30 16 * * *'
 
